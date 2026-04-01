@@ -7,8 +7,8 @@ Convert markdown exam/quiz files to Jenzabar LMS cartridge zip files. Argument: 
 1. Parse the argument:
    - If it is a single `.md` file path: convert that one file.
    - If it is a folder path: batch convert all `.md` files in that folder.
-   - If it is a class name: look in `classes/[CLASS]/HomeworkQuestions/` for `.md` files and batch convert them.
-   - If no argument given: ask the instructor which file or folder to convert.
+   - If it is a class name (e.g. "AZ-900"): look in `classes/[CLASS]/HomeworkQuestions/` for `.md` files and batch convert them.
+   - If no argument given: ask Ashley which file or folder to convert.
 
 2. Determine the output folder:
    - Default: same folder as the input, in a `jenzabar_output/` subfolder.

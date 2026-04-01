@@ -1,0 +1,40 @@
+{
+  "_instructions": "Copy this file, rename it to [code].json, fill in all fields, drop in /courses/. The agent picks it up automatically.",
+  "code": "SHORTCODE",
+  "title": "Full Course Title",
+  "inf_code": "INF XXXX",
+  "certification": "Exam Name / Cert Code (if applicable)",
+  "syllabus_days": 80,
+  "default_region": null,
+  "deliverables_required": ["study-guide", "mind-map", "hot", "lab", "rubric"],
+  "notes": "Any special rules for this course go here.",
+  "clos": [
+    "CLO 1: ...",
+    "CLO 2: ..."
+  ],
+  "modules": [
+    {
+      "number": 1,
+      "title": "Module Title",
+      "topics": ["Topic A", "Topic B"],
+      "episodes": [],
+      "labs": [],
+      "hot": null,
+      "exam": null,
+      "status": {
+        "mind-map": false,
+        "study-guide": false,
+        "lab": false,
+        "hot": false,
+        "answer-guide-hot": false,
+        "rubric-lab": false,
+        "rubric-hot": false,
+        "combined-lab": false,
+        "outline": false
+      }
+    }
+  ],
+  "labs": [],
+  "hots": [],
+  "exam_schedule": []
+}

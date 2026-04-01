@@ -1,0 +1,108 @@
+{
+  "code": "az900",
+  "title": "AZ-900: Microsoft Azure Fundamentals",
+  "inf_code": "INF 2016",
+  "certification": "Microsoft Azure Fundamentals AZ-900",
+  "syllabus_days": 80,
+  "default_region": "East US 2",
+  "deliverables_required": ["study-guide", "hot", "lab", "rubric"],
+  "notes": "CLOs pending departmental approval. Written module exams (40 min, 40 questions) on same days as HOT 1, 2, 4, 5. Self-study homework references mini-lecture episodes Ep01-39. Use East US 2 for all labs -- East US policy blocks some resources on student subscriptions.",
+  "homework_folders": {
+    "questions": "classes/AZ-900/HomeworkQuestions/",
+    "episode_files": "classes/AZ-900/HomeworkQuestions/EpisodeFiles/",
+    "episode_files_module_1": "classes/AZ-900/HomeworkQuestions/EpisodeFiles/Module 1/",
+    "episode_files_module_2": "classes/AZ-900/HomeworkQuestions/EpisodeFiles/Module 2/",
+    "episode_files_module_3": "classes/AZ-900/HomeworkQuestions/EpisodeFiles/Module 3/",
+    "episode_files_module_4": "classes/AZ-900/HomeworkQuestions/EpisodeFiles/Module 4/",
+    "textbook_module_1": "classes/AZ-900/TextBookFiles/Module 1/",
+    "textbook_module_2": "classes/AZ-900/TextBookFiles/Module 2/",
+    "textbook_module_3": "classes/AZ-900/TextBookFiles/Module 3/",
+    "textbook_module_4": "classes/AZ-900/TextBookFiles/Module 4/",
+    "episode_mindmaps_output": "classes/AZ-900/HomeworkQuestions/EpisodeMindMaps/",
+    "homework_mindmaps_output": "classes/AZ-900/output/HomeworkMindMaps/",
+    "final_episode_mindmaps": "classes/AZ-900/output/MindMaps/Final/EpisodeMindMaps/",
+    "final_module_mindmaps": "classes/AZ-900/output/MindMaps/Final/ModuleMindMaps/"
+  },
+  "clos": [
+    "CLO 1: Describe cloud computing concepts and models",
+    "CLO 2: Identify Azure core architecture components",
+    "CLO 3: Describe Azure compute and networking services",
+    "CLO 4: Describe Azure storage services",
+    "CLO 5: Describe Azure identity, access, and security",
+    "CLO 6: Describe Azure cost management and governance",
+    "CLO 7: Describe Azure SLAs, privacy, and compliance"
+  ],
+  "modules": [
+    {
+      "number": 1,
+      "title": "Cloud Concepts",
+      "episodes": [1,2,3,4,5,6,7,8,9,10],
+      "topics": ["What is Cloud Computing","Shared Responsibility Model","Cloud Service Types (IaaS, PaaS, SaaS)","Cloud Deployment Models","Benefits of Cloud","CapEx vs OpEx","Consumption-based Model","High Availability and Scalability","Reliability and Predictability","Security and Governance"],
+      "clo_mapping": ["CLO 1"],
+      "hot": "HOT 1",
+      "exam": "Module 1 Written Exam",
+      "status": { "mind-map": true, "study-guide": true, "lab": "ud", "hot": "ud", "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false }
+    },
+    {
+      "number": 2,
+      "title": "Azure Architecture and Services",
+      "episodes": [11,12,13,14,15,16,17,18,19,20,21,22],
+      "topics": ["Azure Regions and Availability Zones","Resource Groups and Subscriptions","Management Groups","Virtual Machines","App Services","Container Instances","Kubernetes Service","Virtual Networking","VPN Gateway","ExpressRoute","Storage Accounts","Azure Databases"],
+      "clo_mapping": ["CLO 2", "CLO 3", "CLO 4"],
+      "hot": "HOT 2",
+      "exam": "Module 2 Written Exam",
+      "status": { "mind-map": true, "study-guide": true, "lab": "ud", "hot": "ud", "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false }
+    },
+    {
+      "number": 3,
+      "title": "Azure Management and Governance",
+      "episodes": [23,24,25,26,27,28,29,30,31,32,33],
+      "topics": ["Azure Active Directory (Entra ID)","Azure RBAC","Azure Policy","Resource Locks","Microsoft Defender for Cloud","Azure Monitor","Azure Service Health","Azure Advisor","Azure Arc","ARM Templates"],
+      "clo_mapping": ["CLO 5", "CLO 6"],
+      "hot": "HOT 4",
+      "exam": "Module 3 Written Exam",
+      "status": { "mind-map": true, "study-guide": true, "lab": "ud", "hot": "ud", "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false }
+    },
+    {
+      "number": 4,
+      "title": "Pricing, SLAs, and Lifecycle",
+      "episodes": [34,35,36,37,38,39],
+      "topics": ["Pricing Calculator","TCO Calculator","Azure Cost Management","Service Level Agreements","Preview Features","Service Lifecycle"],
+      "clo_mapping": ["CLO 7"],
+      "hot": "HOT 5",
+      "exam": "Module 4 Written Exam",
+      "status": { "mind-map": false, "study-guide": false, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false }
+    }
+  ],
+  "hots": [
+    { "number": 1, "title": "HOT 1: Azure Foundations", "modules_covered": [1], "also_covers": ["Linux basics","VMware ESXi intro"], "written_exam_same_day": true },
+    { "number": 2, "title": "HOT 2: Cost Management and Virtual Machine Deployment", "modules_covered": [2], "written_exam_same_day": true },
+    { "number": 3, "title": "HOT 3: Azure Storage and Networking", "modules_covered": [2,3], "written_exam_same_day": false },
+    { "number": 4, "title": "HOT 4: Azure Governance and Compliance", "modules_covered": [3], "written_exam_same_day": true },
+    { "number": 5, "title": "HOT 5: Pricing, SLAs, and Lifecycle Management", "modules_covered": [4], "written_exam_same_day": true }
+  ],
+  "labs": [
+    { "number": 1,  "title": "Creating an Azure Free Account and Exploring the Portal", "tasks": 3, "anchor_string": "Lab 1:", "known_issues": [] },
+    { "number": 2,  "title": "Exploring Azure Resource Groups and Tags", "tasks": 3, "anchor_string": "Lab 2:", "known_issues": [] },
+    { "number": 3,  "title": "Deploying a Virtual Machine", "tasks": 4, "anchor_string": "Lab 3:", "known_issues": ["VM sizes change frequently -- verify available sizes in the portal before publishing"] },
+    { "number": 4,  "title": "Configuring Virtual Networks", "tasks": 3, "anchor_string": "Lab 4:", "known_issues": [] },
+    { "number": 5,  "title": "Implementing Azure Storage", "tasks": 3, "anchor_string": "Lab 5:", "known_issues": [] },
+    { "number": 6,  "title": "Configuring Azure App Services", "tasks": 3, "anchor_string": "Lab 6:", "known_issues": [] },
+    { "number": 7,  "title": "Working with Azure Functions", "tasks": 2, "anchor_string": "Lab 7:", "known_issues": [] },
+    { "number": 8,  "title": "Implementing Azure Kubernetes Service", "tasks": 3, "anchor_string": "Lab 8:", "known_issues": [] },
+    { "number": 9,  "title": "Configuring Azure Active Directory", "tasks": 3, "anchor_string": "Lab 9:", "known_issues": [] },
+    { "number": 10, "title": "Working with Azure Monitor and Log Analytics", "tasks": 3, "anchor_string": "Lab 10:", "known_issues": ["Container logs navigation path changed in portal -- current path: Overview > Containers > click container name > Logs tab. Verify before publishing."] },
+    { "number": 11, "title": "Implementing Azure Backup", "tasks": 3, "anchor_string": "Lab 11:", "known_issues": [] },
+    { "number": 12, "title": "Azure Policy and Compliance", "tasks": 3, "anchor_string": "Lab 12:", "known_issues": ["Feature deprecated or significantly changed -- lab requires rewrite or replacement steps before publishing"] },
+    { "number": 13, "title": "Implementing Azure Cost Management", "tasks": 3, "anchor_string": "Lab 13:", "known_issues": [] },
+    { "number": 14, "title": "Configuring Azure Key Vault", "tasks": 3, "anchor_string": "Lab 14:", "known_issues": [] },
+    { "number": 15, "title": "Working with Azure Blob Storage and Access Tiers", "tasks": 3, "anchor_string": "Lab 15:", "known_issues": [
+      "Task 2: Microsoft now disables anonymous blob access at the storage account level by default. Task 1 must include a step to enable it: Settings > Configuration > Allow Blob anonymous access. Add this BEFORE Task 2 begins.",
+      "Reference popout image added for the Configuration page screenshot"
+    ]},
+    { "number": 16, "title": "Azure SQL Database", "tasks": 3, "anchor_string": "Lab 16:", "known_issues": [
+      "Task 2: SQL firewall error now shows an Allowlist server IP button in the Query Editor. Students click that button -- do NOT send them to server firewall settings manually.",
+      "Task 2 SQL script requires AdventureWorksLT sample data. Student must select: Additional settings > Use existing data > Sample during database creation. If skipped, SalesLT schema will not exist and the script will fail."
+    ]}
+  ]
+}

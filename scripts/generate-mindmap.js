@@ -3,7 +3,7 @@
  * generate-mindmap.js
  * 
  * Reads a mind map JSON data file and produces a self-contained HTML file
- * using D3.js with custom-branded styling.
+ * using D3.js with Ranken-branded styling.
  *
  * Usage:
  *   node generate-mindmap.js <data.json> [output.html]

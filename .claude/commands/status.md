@@ -4,16 +4,17 @@ Show the module status table for a class. Argument: $ARGUMENTS (class name, or "
 
 ## How to Run
 
-1. If no argument given, ask which class. List the available classes from `courses/` folder, or "all".
+1. If no argument given, ask: "Which class? (SecurityPlus, AZ-900, Server, Linux, VMware, OperatingSystems, or all)"
 2. Read the course JSON from `courses/[code].json`
 3. Build the status table using these indicators:
-   - `true` in JSON = finalized
+   - `true` in JSON = ✅ (finalized)
    - `"ud"` in JSON = UD (under development)
-   - `false` in JSON = not built
+   - `false` in JSON = ❌ (not built)
 
 ## Table Format
 
-Show a table with columns matching the deliverable types defined in the course JSON (e.g. Module, Mind Map, Study Guide, Labs, HOT, etc.).
+Show a table with these columns:
+Module | Mind Map | Study Guide | Labs | HOT | Answer Guide HOT | Rubric Lab | Rubric HOT | Combined Lab | Outline
 
 ## After the Table
 

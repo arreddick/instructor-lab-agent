@@ -37,9 +37,23 @@ Type the number of your choice.
 
 ## Step 3: Which Class
 
-After the user picks a number, show the class list from the course JSON files in the `courses/` folder, plus an "Other" option for new classes.
+After the user picks a number, show:
 
-If they choose Other:
+---
+Which class is this for?
+
+1. AZ-900
+2. Security Plus
+3. Server
+4. Linux
+5. VMware
+6. Operating Systems
+7. Other (type the name of the new class)
+
+Type the number of your choice.
+---
+
+If they choose 7 (Other):
 - Ask for the class name
 - Spell it back and confirm
 - If confirmed: run `node scripts/new-class.js "[NAME]"`

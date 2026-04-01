@@ -16,37 +16,37 @@ Interactive workflow to build any deliverable for any class. Walks you through c
 Generate ALL required deliverables for a single module automatically. Reads the course JSON, queues tasks, and runs the generator.
 - **Usage:** `/batch [class] [module]`
 - **Arguments:** Class name and module number
-- **Example:** `/batch [ClassName] 8`
+- **Example:** `/batch SecurityPlus 8`
 
 ### test
 Run structural validation on generated files. Checks HTML structure, required elements, print function, screenshot boxes, and more.
 - **Usage:** `/test [filename or all]`
 - **Arguments:** A filename, a class name, or "all"
-- **Examples:** `/test [ClassName]_study_guide_Module_8.html` or `/test all`
+- **Examples:** `/test SecurityPlus_study_guide_Module_8.html` or `/test all`
 
 ### qa
 Run AI quality review on generated files. Reviews content accuracy, completeness, exam alignment, and classroom practicality.
 - **Usage:** `/qa [filename or all]`
 - **Arguments:** A filename, a class name, or "all"
-- **Examples:** `/qa [ClassName]_lab_Module_8.html` or `/qa all`
+- **Examples:** `/qa SecurityPlus_lab_Module_8.html` or `/qa all`
 
 ### status
 Show the module completion table for a class. Displays which deliverables are done, under development, or not started.
 - **Usage:** `/status [class or all]`
 - **Arguments:** A class name or "all"
-- **Examples:** `/status [ClassName]` or `/status all`
+- **Examples:** `/status SecurityPlus` or `/status all`
 
 ### final
 Move a file from UnderDevelopment/ to Final/ and update the course JSON status.
 - **Usage:** `/final [filename]`
 - **Arguments:** A filename, or "last" for the most recently generated file
-- **Examples:** `/final [ClassName]_MindMap_Module8.html` or `/final last`
+- **Examples:** `/final SecurityPlus_MindMap_Module8.html` or `/final last`
 
 ### patch
 Edit an existing file with targeted changes. Creates a backup first.
 - **Usage:** `/patch [filename] [instructions]`
 - **Arguments:** Filename and a description of what to fix
-- **Example:** `/patch [ClassName]_lab_Module_8.html "Fix Phase 3 screenshot numbering"`
+- **Example:** `/patch SecurityPlus_lab_Module_8.html "Fix Phase 3 screenshot numbering"`
 
 ### log
 Show recent session actions from the session log.
@@ -70,7 +70,7 @@ Pre-load templates, CSS, and course configs into session cache so builds run fas
 - **Arguments:** None
 
 ### attendance
-Generate attendance consultation PDF forms from an attendance Excel export. Reads student names, absences, and tardies from the spreadsheet and fills in the form template automatically.
+Generate attendance consultation PDF forms from a Jenzabar attendance Excel export. Reads student names, absences, and tardies from the spreadsheet and fills in the official Ranken form automatically.
 - **Usage:** `/attendance [xlsx file]`
 - **Arguments:** Optional path to a .xlsx file. If omitted, searches the agent folder for one.
 - **Examples:** `/attendance Attendance_Spring2026.xlsx` or `/attendance`
@@ -80,7 +80,7 @@ Generate attendance consultation PDF forms from an attendance Excel export. Read
 Convert markdown exam/quiz files to Jenzabar LMS cartridge zip files for import.
 - **Usage:** `/jenzabar [file or folder or class]`
 - **Arguments:** A .md file path, a folder of .md files, or a class name
-- **Examples:** `/jenzabar Exam_MC.md` or `/jenzabar [ClassName]`
+- **Examples:** `/jenzabar AZ900_Ep01_MC.md` or `/jenzabar AZ-900`
 
 ### usage
 Open the Claude AI usage page in your browser to check session and weekly limits.
@@ -104,7 +104,7 @@ Show this help reference. Add a skill name to get details on that specific skill
 
 ---
 
-## Instructor Lab Agent - Skill Reference
+## Ashley's IT Lab Agent - Skill Reference
 
 For help on any specific skill: `/help [skill name]`
 
@@ -130,7 +130,7 @@ For help on any specific skill: `/help [skill name]`
 | Skill | Description |
 |-------|------------|
 | `/jenzabar [file or folder]` | Convert markdown exams to Jenzabar LMS cartridge zips |
-| `/attendance [xlsx]` | Generate attendance consultation PDF forms from attendance export |
+| `/attendance [xlsx]` | Generate attendance consultation PDF forms from Jenzabar export |
 
 ### Tracking
 | Skill | Description |
@@ -147,11 +147,14 @@ For help on any specific skill: `/help [skill name]`
 | `/help` | Show this reference (add a skill name for details) |
 | `/show_agent_skills` | Show all skills with descriptions |
 
+### Available Classes
+`AZ-900` `SecurityPlus` `Server` `Linux` `VMware` `OperatingSystems`
+
 ### Quick Tips
 - All new files save to UnderDevelopment/ first
 - Say `/final [filename]` when you are happy with a file
 - Use `/resume` in a new chat to pick up from last session
-- Status uses: finalized, UD (UnderDevelopment), not built
+- Status uses: ✅ = Final, UD = UnderDevelopment, ❌ = Not built
 - For help on any skill: `/help [skill name]`
 
 ---

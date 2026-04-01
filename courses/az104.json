@@ -1,0 +1,67 @@
+{
+  "code": "az104",
+  "title": "AZ-104: Microsoft Azure Administrator",
+  "inf_code": "INF 2016",
+  "certification": "Microsoft Azure Administrator AZ-104",
+  "syllabus_days": 80,
+  "default_region": "East US 2",
+  "deliverables_required": ["lab", "study-guide", "hot", "rubric"],
+  "notes": "19+ hands-on labs. Each lab requires: Why This Lab Matters, Key Terms, What You Should See checkboxes, If You Get Stuck troubleshooting table, Knowledge Check questions, Exam Tips, Cost Warnings (where applicable), and CLEANUP STEPS at end. High-cost labs: App Gateway (Lab 12), VPN Gateway (Lab 13).",
+  "clos": [
+    "CLO 1: Manage Azure identities and governance (15-20%)",
+    "CLO 2: Implement and manage storage (15-20%)",
+    "CLO 3: Deploy and manage Azure compute resources (20-25%)",
+    "CLO 4: Implement and manage virtual networking (25-30%)",
+    "CLO 5: Monitor and maintain Azure resources (10-15%)"
+  ],
+  "exam_domains": [
+    { "domain": "Identity and Governance", "weight": "15-20%", "clo": "CLO 1" },
+    { "domain": "Storage", "weight": "15-20%", "clo": "CLO 2" },
+    { "domain": "Compute", "weight": "20-25%", "clo": "CLO 3" },
+    { "domain": "Networking", "weight": "25-30%", "clo": "CLO 4" },
+    { "domain": "Monitoring", "weight": "10-15%", "clo": "CLO 5" }
+  ],
+  "labs": [
+    { "number": "01", "title": "Identity, Users, and Groups", "domain": "Identity and Governance", "duration_min": 90, "cost_warning": false },
+    { "number": "02", "title": "Role-Based Access Control (RBAC)", "domain": "Identity and Governance", "duration_min": 90, "cost_warning": false },
+    { "number": "03", "title": "Azure Policy and Governance", "domain": "Identity and Governance", "duration_min": 90, "cost_warning": false },
+    { "number": "04", "title": "Storage Accounts and Blob Storage", "domain": "Storage", "duration_min": 120, "cost_warning": false },
+    { "number": "05", "title": "Azure Files and File Sync", "domain": "Storage", "duration_min": 90, "cost_warning": false },
+    { "number": "06", "title": "Storage Security (SAS, Encryption, Access Tiers)", "domain": "Storage", "duration_min": 90, "cost_warning": false },
+    { "number": "07", "title": "Virtual Machines - Deployment and Configuration", "domain": "Compute", "duration_min": 180, "cost_warning": true },
+    { "number": "08", "title": "VM Scale Sets and Availability", "domain": "Compute", "duration_min": 120, "cost_warning": true },
+    { "number": "09", "title": "Azure App Service and Containers", "domain": "Compute", "duration_min": 120, "cost_warning": false },
+    { "number": "10", "title": "ARM Templates and Azure Bicep", "domain": "Compute", "duration_min": 90, "cost_warning": false },
+    { "number": "11", "title": "VM Extensions and Custom Script", "domain": "Compute", "duration_min": 90, "cost_warning": false },
+    { "number": "12", "title": "Virtual Networks, Subnets, and NSGs", "domain": "Networking", "duration_min": 180, "cost_warning": false },
+    { "number": "13", "title": "Azure Load Balancer and Traffic Distribution", "domain": "Networking", "duration_min": 120, "cost_warning": true },
+    { "number": "14", "title": "Application Gateway", "domain": "Networking", "duration_min": 120, "cost_warning": true, "cost_note": "HIGH COST - Delete immediately after lab" },
+    { "number": "15", "title": "VPN Gateway and Site-to-Site Connectivity", "domain": "Networking", "duration_min": 120, "cost_warning": true, "cost_note": "HIGH COST - Delete immediately after lab" },
+    { "number": "16", "title": "Azure DNS", "domain": "Networking", "duration_min": 90, "cost_warning": false },
+    { "number": "17", "title": "Network Watcher and Diagnostics", "domain": "Networking", "duration_min": 90, "cost_warning": false },
+    { "number": "18", "title": "Azure Monitor, Metrics, and Alerts", "domain": "Monitoring", "duration_min": 90, "cost_warning": false },
+    { "number": "19", "title": "Azure Backup and Recovery Services Vault", "domain": "Monitoring", "duration_min": 90, "cost_warning": false },
+    { "number": "20", "title": "Azure Automation and Runbooks", "domain": "Monitoring", "duration_min": 90, "cost_warning": false },
+    { "number": "21", "title": "Self-Service Password Reset (SSPR)", "domain": "Identity and Governance", "duration_min": 60, "cost_warning": false },
+    { "number": "22", "title": "Cost Management and Azure Advisor", "domain": "Monitoring", "duration_min": 60, "cost_warning": false, "cost_note": "FREE lab - no resource costs" }
+  ],
+  "lab_structure_required": [
+    "Why This Lab Matters (real-world scenario)",
+    "Key Terms (plain English definitions)",
+    "Prerequisites",
+    "Lab Steps (numbered, detailed)",
+    "What You Should See (visual verification checkboxes)",
+    "If You Get Stuck (troubleshooting table)",
+    "Knowledge Check (3-5 self-test questions)",
+    "Exam Tips (what to remember for AZ-104)",
+    "CLEANUP STEPS (delete all resources created)"
+  ],
+  "setup_phases": [
+    "Phase 1: Admin Tenant Setup",
+    "Phase 2: Student Tenant Setup",
+    "Phase 3: Governance (Management Groups, Policies, RBAC)",
+    "Phase 4: Shared Infrastructure (VNets, Bicep templates)",
+    "Phase 6: Student Labs"
+  ],
+  "emergency_runbook": "If Ashley is unavailable: direct students to learn.microsoft.com/training/paths/az-104-administrator-prerequisites/ or search 'AZ-104 [topic]' on YouTube."
+}

@@ -1,0 +1,39 @@
+{
+  "code": "secplus",
+  "title": "CompTIA Security+ SY0-701",
+  "inf_code": "INF 2014",
+  "certification": "CompTIA Security+ SY0-701",
+  "syllabus_days": 80,
+  "deliverables_required": ["mind-map", "study-guide", "lab", "hot", "answer-guide-hot", "rubric-lab", "rubric-hot", "combined-lab", "outline"],
+  "notes": "Build order per module: Mind Map > Study Guide > Labs > HOTs > Answer Guide HOTs > Rubric Lab > Rubric HOT > Outline, then combine labs by part. Status values: true = Final, ud = UnderDevelopment, false = not built.",
+  "troubleshooting_tip": "Before escalating, always: (1) Check the error message carefully, (2) Verify your permissions, (3) Confirm the service/resource is running, (4) Review recent changes.",
+  "modules": [
+    { "number": 1,  "title": "Threats, Attacks, and Vulnerabilities",  "status": { "mind-map": true, "study-guide": true, "lab": true,  "hot": true,  "answer-guide-hot": true,  "rubric-lab": "ud", "rubric-hot": true,  "combined-lab": true,  "outline": true  } },
+    { "number": 2,  "title": "Architecture and Design",               "status": { "mind-map": true, "study-guide": true, "lab": true,  "hot": true,  "answer-guide-hot": true,  "rubric-lab": "ud", "rubric-hot": true,  "combined-lab": true,  "outline": true  } },
+    { "number": 3,  "title": "Implementation",                        "status": { "mind-map": true, "study-guide": true, "lab": true,  "hot": true,  "answer-guide-hot": true,  "rubric-lab": "ud", "rubric-hot": true,  "combined-lab": true,  "outline": true  } },
+    { "number": 4,  "title": "Operations and Incident Response",      "status": { "mind-map": true, "study-guide": true, "lab": true,  "hot": true,  "answer-guide-hot": true,  "rubric-lab": "ud", "rubric-hot": true,  "combined-lab": true,  "outline": true  } },
+    { "number": 5,  "title": "Governance, Risk, and Compliance",      "status": { "mind-map": true, "study-guide": true, "lab": "ud",  "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": "ud",  "outline": false } },
+    { "number": 6,  "title": "Cryptography and PKI",                  "status": { "mind-map": true, "study-guide": true, "lab": "ud",  "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": "ud",  "outline": false } },
+    { "number": 7,  "title": "Identity and Access Management",        "status": { "mind-map": true, "study-guide": true, "lab": "ud",  "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": "ud",  "outline": false } },
+    { "number": 8,  "title": "Network Security",                      "status": { "mind-map": true, "study-guide": true, "lab": "ud",  "hot": "ud",  "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": "ud",  "outline": false } },
+    { "number": 9,  "title": "Infrastructure Security",               "status": { "mind-map": true, "study-guide": true, "lab": "ud",  "hot": "ud",  "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": "ud",  "outline": false } },
+    { "number": 10, "title": "Wireless Network Attacks and Defenses",  "status": { "mind-map": true, "study-guide": true, "lab": "ud",  "hot": "ud",  "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": "ud",  "outline": false } },
+    { "number": 11, "title": "Cloud and Virtualization Security",      "status": { "mind-map": true, "study-guide": true, "lab": "ud",  "hot": "ud",  "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": "ud",  "outline": false } },
+    { "number": 12, "title": "Vulnerability Management",              "status": { "mind-map": true, "study-guide": true, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } },
+    { "number": 13, "title": "Incident Preparation and Investigation", "status": { "mind-map": true, "study-guide": true, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } },
+    { "number": 14, "title": "Oversight and Operations",              "status": { "mind-map": true, "study-guide": true, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } },
+    { "number": 15, "title": "Information Security Management",       "status": { "mind-map": true, "study-guide": true, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } }
+  ],
+  "study_guide_requirements": [
+    "Multi-phase HTML with phase pill navigation",
+    "Rich comparison and key-terms tables",
+    "2 Performance-Based Questions (PBQs) per guide",
+    "Deep Dive scenarios with 3 questions each",
+    "Never condense - full rich content always"
+  ],
+  "web_hacking_lab": {
+    "included": true,
+    "vulnerabilities": ["IDOR", "BAC (Broken Access Control)", "XSS", "CSRF"],
+    "purpose": "Security+ practical component for INF 2014"
+  }
+}

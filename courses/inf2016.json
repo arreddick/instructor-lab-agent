@@ -1,0 +1,21 @@
+{
+  "code": "inf2016",
+  "title": "INF 2016: System Administration II",
+  "inf_code": "INF 2016",
+  "sub_courses": ["Linux+", "VMware vSphere ESXi 7", "AZ-900"],
+  "syllabus_days": 80,
+  "deliverables_required": ["lab", "study-guide", "hot", "rubric"],
+  "notes": "80-day syllabus covering three sub-courses. Syllabus was built as Node.js/docx script. AZ-900 default region: East US 2. VMware: 23 labs, LastName71/72 hosts, no DRS/HA/vSAN/Lifecycle Manager.",
+  "sub_course_details": {
+    "linux": {
+      "certification": "CompTIA Linux+",
+      "ref": "courses/secplus.json for style; no separate JSON - covered in this course"
+    },
+    "vmware": {
+      "ref": "courses/vmware.json"
+    },
+    "azure": {
+      "ref": "courses/az900.json"
+    }
+  }
+}

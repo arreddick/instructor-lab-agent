@@ -1,0 +1,37 @@
+{
+  "code": "inf2014",
+  "title": "INF 2014: System Administration 1",
+  "inf_code": "INF 2014",
+  "sub_courses": ["Windows Server 2022", "CompTIA Security+ SY0-701"],
+  "syllabus_variants": [
+    { "type": "semester", "days": 80, "schedule": "Mon-Fri" },
+    { "type": "summer", "days": 56, "schedule": "Mon-Thu" },
+    { "type": "summer", "days": 54, "schedule": "Mon-Fri" }
+  ],
+  "deliverables_required": ["lab", "study-guide", "hot", "rubric"],
+  "notes": "Covers Windows Server 2022 and Security+ SY0-701 together. Includes web hacking lab site (IDOR, BAC, XSS, CSRF) as Security+ practical component. Lab machine: Hyper-V, AMD Ryzen 9 7900X. Network: Cisco-managed 10.200.23.x. UniFi OS Server 5.0.6 on classroom machine 10.200.23.201.",
+  "modules": [
+    { "number": 1,  "title": "Windows Server 2022 Installation and Configuration", "status": { "mind-map": false, "study-guide": false, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } },
+    { "number": 2,  "title": "Active Directory Domain Services",                   "status": { "mind-map": false, "study-guide": false, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } },
+    { "number": 3,  "title": "Group Policy Management",                            "status": { "mind-map": false, "study-guide": false, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } },
+    { "number": 4,  "title": "DNS and DHCP Services",                              "status": { "mind-map": false, "study-guide": false, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } },
+    { "number": 5,  "title": "File and Storage Services",                          "status": { "mind-map": false, "study-guide": false, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } },
+    { "number": 6,  "title": "Remote Access and VPN",                              "status": { "mind-map": false, "study-guide": false, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } },
+    { "number": 7,  "title": "Windows Server Security Fundamentals",               "status": { "mind-map": false, "study-guide": false, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } },
+    { "number": 8,  "title": "Security+ Threats, Attacks, and Vulnerabilities",    "status": { "mind-map": false, "study-guide": false, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } },
+    { "number": 9,  "title": "Security+ Architecture and Implementation",          "status": { "mind-map": false, "study-guide": false, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } },
+    { "number": 10, "title": "Security+ Operations and Incident Response",         "status": { "mind-map": false, "study-guide": false, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } },
+    { "number": 11, "title": "Security+ Governance, Risk, and Compliance",         "status": { "mind-map": false, "study-guide": false, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } },
+    { "number": 12, "title": "Security+ Practical Labs (Web Hacking)",             "status": { "mind-map": false, "study-guide": false, "lab": false, "hot": false, "answer-guide-hot": false, "rubric-lab": false, "rubric-hot": false, "combined-lab": false, "outline": false } }
+  ],
+  "lab_resources": {
+    "hyper_v_host": "AMD Ryzen 9 7900X",
+    "network": "Cisco-managed 10.200.23.x",
+    "unifi": "10.200.23.201 (UniFi OS Server 5.0.6)",
+    "google_nest_cameras": true
+  },
+  "combined_lab_manuals": [
+    "Modules 7-8 Combined Lab Manual",
+    "Modules 11-12 Combined Lab Manual"
+  ]
+}

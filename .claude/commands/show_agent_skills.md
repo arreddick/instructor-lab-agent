@@ -4,7 +4,7 @@ Display all available agent skills.
 
 ---
 
-## Instructor Lab Agent - Available Skills
+## Ashley's IT Lab Agent - Available Skills
 
 For help on any skill: `/help [skill name]`
 
@@ -30,7 +30,7 @@ For help on any skill: `/help [skill name]`
 | Skill | Description |
 |-------|------------|
 | `/jenzabar [file or folder]` | Convert markdown exams to Jenzabar LMS cartridge zips |
-| `/attendance [xlsx]` | Generate attendance consultation PDF forms from attendance export |
+| `/attendance [xlsx]` | Generate attendance consultation PDF forms from Jenzabar export |
 
 ### Tracking and Status
 | Skill | Description |
@@ -46,5 +46,8 @@ For help on any skill: `/help [skill name]`
 |-------|------------|
 | `/help` | Show full command reference (add a skill name for details) |
 | `/show_agent_skills` | Show this skills list |
+
+### Available Classes
+`AZ-900` `SecurityPlus` `Server` `Linux` `VMware` `OperatingSystems`
 
 ---

@@ -6,7 +6,7 @@ Detect incomplete work and offer to continue. No arguments needed.
 
 1. Run: `node scripts/resume.js`
 2. Display the output directly.
-3. Ask the instructor which item to pick up first.
+3. Ask Ashley which item to pick up first.
 4. If partial files exist, offer to continue them.
 5. If failed tasks exist, offer to retry them.
 
