@@ -1,0 +1,7 @@
+node_modules/
+*.zip
+classes/*/TextBookFiles/*.docx
+classes/*/TestBankFiles/*.docx
+attendance/*.pdf
+config.json
+workflows/session-context.json

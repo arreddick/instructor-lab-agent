@@ -1,0 +1,28 @@
+{
+  "name": "Module Title Here",
+  "children": [
+    {
+      "name": "Branch Name",
+      "children": [
+        {
+          "name": "Leaf Node (no detail panel)",
+        },
+        {
+          "name": "Leaf Node (with detail panel)",
+          "detail": {
+            "title": "Full Title for Panel Header",
+            "badge": "SY0-701 Domain X.X",
+            "html": "<div class='p-section'><div class='p-section-title'>Section Title</div><p>Content paragraph here.</p></div><div class='p-section'><div class='p-section-title'>Key Points</div><ul><li><strong>Point 1:</strong> Description</li><li><strong>Point 2:</strong> Description</li></ul></div>",
+            "tags": ["Tag1", "Tag2", "Tag3"],
+            "images": [
+              {
+                "src": "data:image/jpeg;base64,/9j/4AAQ...",
+                "caption": "Figure X: Description of the image"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
