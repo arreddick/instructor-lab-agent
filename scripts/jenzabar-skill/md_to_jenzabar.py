@@ -89,8 +89,12 @@ def parse_markdown_exam(md_content):
                 answer = 'A' if answer == 'TRUE' else 'B'
                 q_type = 'tf'
             else:
-                q_type = 'mc'
-            
+                # Check if multiple answers (comma-separated like "A, B, C")
+                if ',' in answer:
+                    q_type = 'ma'
+                else:
+                    q_type = 'mc'
+
             # Look for rationale on next lines
             rationale = ''
             i += 1
@@ -188,7 +192,12 @@ def generate_questions_dat(questions, title):
     
     for idx, q in enumerate(questions):
         item_id = str(uuid.uuid4())
-        q_type = 'True/False' if q['type'] == 'tf' else 'Multiple Choice'
+        if q['type'] == 'tf':
+            q_type = 'True/False'
+        elif q['type'] == 'ma':
+            q_type = 'Multiple Answer'
+        else:
+            q_type = 'Multiple Choice'
         is_multi = len(q['answer']) > 1
         cardinality = 'Multiple' if is_multi else 'Single'
         
@@ -406,8 +415,10 @@ def create_cartridge(md_file_path, output_dir=None):
     
     # Count question types
     mc_count = sum(1 for q in questions if q['type'] == 'mc')
+    ma_count = sum(1 for q in questions if q['type'] == 'ma')
     tf_count = sum(1 for q in questions if q['type'] == 'tf')
     print(f"  - Multiple Choice: {mc_count}")
+    print(f"  - Multiple Answer (select all): {ma_count}")
     print(f"  - True/False: {tf_count}")
     
     # Generate output path
